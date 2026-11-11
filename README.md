@@ -1,6 +1,6 @@
 # Relay
 
-**A local HTTP/HTTPS traffic inspector for Windows.** Relay runs a Rust-native MITM proxy, streams captures from your phone, tablet or PC into a fast desktop UI, and keeps everything on your machine — no Python, no Electron, no cloud.
+**A local HTTP/HTTPS traffic inspector for Windows.** Relay runs a Rust-native MITM proxy, captures requests from iPhone, Android, tablets, and PCs on your Wi-Fi, and streams them into a fast desktop UI. Everything stays on your machine — no Python, no Electron, no cloud.
 
 [![CI](https://github.com/lightlame/relay/actions/workflows/ci.yml/badge.svg)](https://github.com/lightlame/relay/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)

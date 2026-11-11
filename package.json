@@ -12,7 +12,7 @@
   "devDependencies": {
     "@tauri-apps/cli": "^2"
   },
-  "description": "Relay — local HTTP/HTTPS traffic inspector",
+  "description": "Relay — local HTTP/HTTPS traffic inspector for iPhone, Android, tablets and PCs",
   "license": "MIT",
   "engines": {
     "node": ">=20"
