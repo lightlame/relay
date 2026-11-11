@@ -34,5 +34,5 @@ storage = { path = "../crates/storage" }
 security = { path = "../crates/security" }
 local-ip-address = "0.6"
 winreg = "0.55"
-windows-sys = { version = "0.59", features = ["Win32_Networking_WinInet"] }
+windows-sys = { version = "0.61", features = ["Win32_Networking_WinInet"] }
 
