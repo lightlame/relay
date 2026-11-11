@@ -1,0 +1,15 @@
+[package]
+name = "replay"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+domain = { path = "../domain" }
+reqwest = { version = "0.12", features = ["rustls-tls", "gzip", "brotli", "deflate", "zstd", "cookies"], default-features = false }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+base64 = "0.22"
+url = "2"
+similar = "2"

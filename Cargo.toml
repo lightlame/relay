@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "src-tauri",
+    "crates/domain",
+    "crates/proxy",
+    "crates/replay",
+    "crates/curl_export",
+    "crates/storage",
+    "crates/security",
+    "test_fixtures"
+]
+resolver = "2"

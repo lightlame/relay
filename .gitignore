@@ -1,0 +1,51 @@
+# Build output
+/target
+**/target
+/frontend/dist
+/dist
+
+# Node
+node_modules
+**/node_modules
+npm-debug.log*
+
+# Tauri generated schemas
+/src-tauri/gen/schemas
+
+# Local binaries / installers
+/Relay.exe
+*.exe
+*.msi
+*.msix
+*.nsis.zip
+*.sig
+*.pdb
+
+# Local data and secrets
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+*.pem
+*.key
+*.cer
+*.crt
+*.p12
+*.pfx
+mitmproxy-ca.pem
+.mitmproxy/
+test_fixtures/fixtures/
+
+# Logs and temporary files
+*.log
+*.bak
+*.tmp
+coverage/
+
+# Editor / OS
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db

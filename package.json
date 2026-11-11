@@ -1,0 +1,21 @@
+{
+  "name": "relay-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "tauri": "tauri",
+    "check:rust": "cargo fmt --all --check && cargo clippy --workspace --all-targets -- -D warnings && cargo test --workspace",
+    "check:web": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  },
+  "description": "Relay — local HTTP/HTTPS traffic inspector",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "npm@10.9.3"
+}

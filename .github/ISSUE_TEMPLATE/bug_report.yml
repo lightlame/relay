@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible problem with Relay
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach CA private keys, captured tokens, cookies or personal traffic.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Start proxy on ...
+        2. Open ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Relay version / commit
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Redact secrets and hostnames you do not want to share.
+      render: text
