@@ -1230,7 +1230,7 @@ export default function App() {
 
   const curlSourceLabel = draft && draftOriginal ? "draft" : selected ? `${selected.method} ${selected.host}` : "none";
   const bindAll = config.host === "0.0.0.0" || config.host === "::" || config.host === "[::]";
-  const certificateAddress = `${bindAll ? config.lanIp || config.host : config.host}:${config.port}`;
+  const certificateAddress = `${bindAll ? config.lanIp || "127.0.0.1" : config.host}:${config.port}`;
 
   const renderInspector = () => {
     if (!selected) {
@@ -1281,6 +1281,7 @@ export default function App() {
         hosts={hosts}
         contentTypes={contentTypes}
         proxy={proxy}
+        lanIp={config.lanIp}
         onOpenSettings={() => openSettings()}
         savedFilters={savedFilters}
         onApplySavedFilter={(saved) => {

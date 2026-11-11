@@ -19,6 +19,7 @@ interface SidebarProps {
   hosts: string[];
   contentTypes: string[];
   proxy: ProxyStatus;
+  lanIp?: string | null;
   onOpenSettings: () => void;
   savedFilters: SavedFilter[];
   onApplySavedFilter: (filter: SavedFilter) => void;
@@ -55,6 +56,7 @@ export function Sidebar(props: SidebarProps) {
     hosts,
     contentTypes,
     proxy,
+    lanIp,
     onOpenSettings,
     savedFilters,
     onApplySavedFilter,
@@ -85,6 +87,9 @@ export function Sidebar(props: SidebarProps) {
     filter.hosts.length > 0 ||
     filter.contentTypes.length > 0 ||
     filter.onlyErrors;
+
+  const bindAllProxy =
+    proxy.host === "0.0.0.0" || proxy.host === "::" || proxy.host === "[::]";
 
   return (
     <aside className="sidebar">
@@ -302,16 +307,13 @@ export function Sidebar(props: SidebarProps) {
           <div>
             <strong>{proxy.running ? "Proxy online" : "Proxy offline"}</strong>
             <small>
-              {proxy.host}:{proxy.port}
+              {bindAllProxy ? lanIp || "127.0.0.1" : proxy.host}:{proxy.port}
               {proxy.lastError ? " · issue" : ""}
             </small>
           </div>
           <button className="icon-button" title="Proxy settings" onClick={onOpenSettings}>
             <Icon name="settings" />
           </button>
-        </div>
-        <div className="security-hint">
-          <Icon name="lock" /> Local only · no telemetry
         </div>
       </div>
     </aside>

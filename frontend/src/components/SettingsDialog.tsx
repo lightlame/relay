@@ -114,7 +114,7 @@ export function SettingsDialog(props: SettingsDialogProps) {
   const fromMitmproxy = config.caSource.toLowerCase().includes("mitmproxy");
   const needsInstall = config.caSource.toLowerCase().includes("generated");
   const bindAll = !host || host === "0.0.0.0" || host === "::" || host === "[::]";
-  const deviceHost = bindAll ? config.lanIp || "this computer" : host;
+  const deviceHost = bindAll ? config.lanIp || "127.0.0.1" : host;
   const deviceAddress = `${deviceHost}:${port}`;
 
   const copyDeviceAddress = async () => {

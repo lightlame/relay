@@ -42,7 +42,6 @@ select, input, textarea { border:1px solid var(--line); background:var(--panel);
 .saved-filter { border-top:1px solid var(--line); margin-top:13px; padding-top:10px; display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:10px; } .saved-filter button { color:var(--accent); border:0; background:none; font-size:10px; } .saved-filter .icon { margin-right:3px; }
 .sidebar-foot { margin-top:auto; padding:13px 0 12px; border-top:1px solid var(--line); }
 .proxy-state { display:flex; gap:8px; align-items:center; } .proxy-state div { flex:1; } .proxy-state strong, .proxy-state small { display:block; font-size:10px; } .proxy-state small { color:var(--faint); margin-top:2px; font:9px var(--mono); }
-.security-hint { display:flex; align-items:center; gap:6px; color:var(--faint); font-size:9px; margin-top:12px; }
 .workspace { display:flex; flex-direction:column; min-width:0; background:var(--canvas); overflow:hidden; }
 .topbar { height:53px; flex:0 0 auto; border-bottom:1px solid var(--line); background:var(--panel); display:flex; align-items:center; justify-content:space-between; padding:0 17px; }
 .topbar-crumbs { display:flex; align-items:center; gap:8px; color:var(--faint); font-size:10px; } .topbar-crumbs strong { color:var(--text); font-weight:600; } .topbar-crumbs .icon { font-size:12px; }
