@@ -1327,7 +1327,7 @@ export default function App() {
               <span className={proxy.running ? "live-dot" : "idle-dot"} />
               <span>{proxy.running ? "Capturing" : "Idle"}</span>
               <small>
-                {proxy.host}:{proxy.port}
+                {bindAll ? config.lanIp || "127.0.0.1" : proxy.host}:{proxy.port}
               </small>
               <button
                 className="icon-button"
