@@ -33,6 +33,6 @@ curl_export = { path = "../crates/curl_export" }
 storage = { path = "../crates/storage" }
 security = { path = "../crates/security" }
 local-ip-address = "0.6"
-winreg = "0.55"
+winreg = "0.56"
 windows-sys = { version = "0.59", features = ["Win32_Networking_WinInet"] }
 
